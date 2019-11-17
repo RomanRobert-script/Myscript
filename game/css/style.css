@@ -1,0 +1,12 @@
+.score{
+	background-color: #7a6af4;
+	color: #ffff;
+	font-weight: 900;
+}
+.score span{
+	padding: 20px;
+}
+.scards{
+	padding: 20px;
+
+}

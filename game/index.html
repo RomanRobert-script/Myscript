@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cricket_click_function</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script1.js"></script>
+</head>
+<body onload="team()">
+	<div class="score">
+		<span class="text-uppercase">run</span>
+		<span id="run_1" class="text-uppercase"> </span>
+		<span class="text-uppercase">wicket</span>
+		<span id="wkt_1" class="text-uppercase"> </span>
+		<span class="text-uppercase">ball by run</span>
+		<span id="bc_1" class="text-uppercase"></span>
+		<span class="text-uppercase">Over</span>
+		<span id="balc_1" class="text-uppercase"></span>
+		<span class="text-uppercase">extra</span>
+		<span id="extras" class="text-uppercase"></span>
+	</div>
+	<div class="scards col-lg-6">
+		<table border="1" width="100%" class="scard text-uppercase">
+			<tr>
+				<th class="text-center">players</th>
+				<th class="text-center">runs</th>
+				<th class="text-center">wicket</th>
+			</tr>
+			<tr>
+				<td id="ind-0"></td>
+				<td id="plrun-0"></td>
+				<td id="plwic-1"></td>
+			</tr>
+			<tr>
+				<td id="ind-1"></td>
+				<td id="plrun-1"></td>
+				<td id="plwic-2"></td>
+			</tr>
+			<tr>
+				<td id="ind-2"></td>
+				<td id="plrun-2"></td>
+				<td id="plwic-3"></td>
+			</tr>
+			<tr>
+				<td id="ind-3"></td>
+				<td id="plrun-3"></td>
+				<td id="plwic-4"></td>
+			</tr>
+			<tr>
+				<td id="ind-4"></td>
+				<td id="plrun-4"></td>
+				<td id="plwic-5"></td>
+			</tr>
+			<tr>
+				<td id="ind-5"></td>
+				<td id="plrun-5"></td>
+				<td id="plwic-6"></td>
+			</tr>
+			<tr>
+				<td id="ind-6"></td>
+				<td id="plrun-6"></td>
+				<td id="plwic-7"></td>
+			</tr>
+			<tr>
+				<td id="ind-7"></td>
+				<td id="plrun-7"></td>
+				<td id="plwic-8"></td>
+			</tr>
+			<tr>
+				<td id="ind-8"></td>
+				<td id="plrun-8"></td>
+				<td id="plwic-9"></td>
+			</tr>
+			<tr>
+				<td id="ind-9"></td>
+				<td id="plrun-9"></td>
+				<td id="plwic-10"></td>
+			</tr>
+			<tr>
+				<td id="ind-10"></td>
+				<td id="plrun-10"></td>
+				<td id="plwic-11"></td>
+			</tr>
+		</table>
+		<div>
+			<button  onclick="runs()">Play</button>
+		</div>
+		<table border="1" width="100%" class="scard text-uppercase">
+			<tr>
+				<th class="text-center">players</th>
+				<th class="text-center">runs</th>
+				<th class="text-center">wicket</th>
+			</tr>
+			<tr>
+				<td id="aus-0"></td>
+				<td id="plrun-0"></td>
+				<td id="plwic-0"></td>
+			</tr>
+			<tr>
+				<td id="aus-1"></td>
+				<td id="plrun-1"></td>
+				<td id="plwic-1"></td>
+			</tr>
+			<tr>
+				<td id="aus-2"></td>
+				<td id="plrun-2"></td>
+				<td id="plwic-2"></td>
+			</tr>
+			<tr>
+				<td id="aus-3"></td>
+				<td id="plrun-3"></td>
+				<td id="plwic-3"></td>
+			</tr>
+			<tr>
+				<td id="aus-4"></td>
+				<td id="plrun-4"></td>
+				<td id="plwic-4"></td>
+			</tr>
+			<tr>
+				<td id="aus-5"></td>
+				<td id="plrun-5"></td>
+				<td id="plwic-5"></td>
+			</tr>
+			<tr>
+				<td id="aus-6"></td>
+				<td id="plrun-6"></td>
+				<td id="plwic-6"></td>
+			</tr>
+			<tr>
+				<td id="aus-7"></td>
+				<td id="plrun-7"></td>
+				<td id="plwic-7"></td>
+			</tr>
+			<tr>
+				<td id="aus-8"></td>
+				<td id="plrun-8"></td>
+				<td id="plwic-8"></td>
+			</tr>
+			<tr>
+				<td id="aus-9"></td>
+				<td id="plrun-9"></td>
+				<td id="plwic-9"></td>
+			</tr>
+			<tr>
+				<td id="aus-10"></td>
+				<td id="plrun-10"></td>
+				<td id="plwic-10"></td>
+			</tr>
+		</table>
+		<div>
+			<button  onclick="inn2()">Play</button>
+		</div>
+	</div>
+	<div class="summary col-lg-3">
+		<h4 class="text-uppercase text-center">India</h4>
+		<div id="innings1" class="text-center col-lg-2"></div>
+		<div id="sco" class="text-center col-lg-10">
+			<p id="sco-1"></p>
+			<p id="sco-2"></p>
+			<p id="sco-3"></p>
+			<p id="sco-4"></p>			
+		</div>
+	</div>
+	<div class="summary col-lg-3">
+		<h4 class="text-uppercase text-center">Australia</h4>
+		<div id="innings2"></div>
+		
+	</div>
+</body>
+</html>
